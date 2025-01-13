@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      animation:{
+       "anim-text": "fadeUp 1s ease-out forwards"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
