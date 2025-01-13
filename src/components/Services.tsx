@@ -67,7 +67,9 @@ const Services = () => {
       <div className="flex gap-4 w-full overflow-hidden">
         {cardsData.map((card, index) => (
           <div
-            ref={(el) => (cardsRef.current[index] = el)}
+          ref={(el) => {
+            cardsRef.current[index] = el;
+          }}
             key={card.id}
             className="relative flex flex-col justify-end rounded-2xl overflow-hidden cursor-pointer h-[40vh] bg-cover bg-center"
             onClick={() => setActiveCard(card.id)}
@@ -76,7 +78,7 @@ const Services = () => {
             }}
           >
             <div
-              ref={(el) => (contentRefs.current[index] = el)}
+              ref={(el) => {contentRefs.current[index] = el}}
               className="flex items-start flex-col p-4 bg-gradient-to-t from-black/70 to-transparent text-white opacity-0"
             >
               <h4 className="uppercase font-bold text-lg">{card.title}</h4>
