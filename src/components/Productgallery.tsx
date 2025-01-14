@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { projects } from '@/constants';
+import Link from 'next/link';
 
 const ProjectGallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -40,7 +41,7 @@ const ProjectGallery = () => {
         className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 [column-fill:_balance]"
         style={{ columnFill: 'balance' }}
       >
-        {filteredProjects.map((project) => (
+        {filteredProjects.map((project,index) => (
           <motion.div
             key={project.id}
             layout
@@ -49,6 +50,7 @@ const ProjectGallery = () => {
             exit={{ opacity: 0 }}
             className="break-inside-avoid mb-6"
           >
+            <Link key={index} href={`/projects/${project.slug}`} passHref>
             <div className="relative group rounded-xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="relative">
                 <Image
@@ -60,7 +62,7 @@ const ProjectGallery = () => {
                   quality={90}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   onLoadingComplete={() => handleImageLoad(project.id)}
-                />
+                  />
                 {/* Overlay */}
                 <div className="absolute w-full inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-end justify-start">
                   <div className="flex w-full items-start flex-col p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
@@ -70,6 +72,7 @@ const ProjectGallery = () => {
                 </div>
               </div>
             </div>
+          </Link>
           </motion.div>
         ))}
       </div>
