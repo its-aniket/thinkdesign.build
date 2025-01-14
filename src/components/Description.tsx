@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { slideUp } from "./animation";
 
 export default function Index() {
   const phrase =
-    "Accomplished architect with a proven track record of delivering exceptional architectural designs that blend innovation, functionality, and aesthetics.";
+    "Crafting spaces that inspire, transform, and endure through thoughtful architectural innovation.";
   const description = useRef(null);
   const isInView = useInView(description);
 
@@ -37,9 +37,9 @@ export default function Index() {
           animate={isInView ? "open" : "closed"}
           className="text-sm lg:text-lg font-light w-full lg:w-3/4"
         >
-          Residential, commercial, and urban planning projects, showcasing
-          versatility and commitment to pushing the boundaries of architectural
-          creativity.
+          Specializing in residential and commercial projects, delivering
+          exceptional design solutions that seamlessly blend aesthetics with
+          functionality.
         </motion.p>
 
         {/* Rounded Button */}
@@ -47,9 +47,7 @@ export default function Index() {
           className="absolute top-1/2 transform -translate-y-1/2 right-0 lg:right-16"
           data-scroll
           data-scroll-speed={0.1}
-        >
-          
-        </div>
+        ></div>
       </div>
     </div>
   );
