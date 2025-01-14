@@ -11,7 +11,6 @@ const ProjectPage = () => {
   if (!project) {
     return <div>Project not found!</div>;
   }
-  const words=[`${project.slug}`]
   return (
     <div className="bg-white mx-4">
       {/* Hero */}
