@@ -59,8 +59,9 @@ const AboutUs = () => {
           <p className="text-neutral-600">
             To create exceptional spaces that elevate human experiences through
             innovative design, sustainable practices, and unwavering attention
-            to detail. We're committed to transforming our clients' visions into
-            reality while setting new standards in architectural excellence.
+            to detail. We&apos;re committed to transforming our clients&apos;
+            visions into reality while setting new standards in architectural
+            excellence.
           </p>
         </div>
 
@@ -149,7 +150,7 @@ const AboutUs = () => {
             While ThinkDesign.Build is a new venture, our team brings over a
             decade and a half of industry-leading expertise to every project. We
             believe that great design comes from collaboration, innovation, and
-            a deep understanding of our clients' needs.
+            a deep understanding of our clients&apos; needs.
           </p>
         </div>
 
