@@ -10,6 +10,16 @@ import {
   Heart,
 } from "lucide-react";
 
+interface FeatureProps {
+    text: string;
+  }
+
+  interface TeamMemberProps {
+    image: string;
+    name: string;
+    achievements: string[];
+  }
+
 const AboutUs = () => {
   return (
     <div className="mx-4 py-12">
@@ -183,14 +193,14 @@ const AboutUs = () => {
   );
 };
 
-const Feature = ({ text }) => (
+const Feature:React.FC<FeatureProps> = ({ text }) => (
   <div className="flex items-center gap-2">
     <Star className="w-4 h-4 text-emerald-600" />
     <span className="text-sm text-neutral-700">{text}</span>
   </div>
 );
 
-const TeamMember = ({ image, name, achievements }) => (
+const TeamMember: React.FC<TeamMemberProps> = ({ image, name, achievements }) => (
   <div className="bg-white p-6 rounded-xl border border-neutral-200">
     <div className="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
       <img src={image} alt={name} className="object-cover w-full h-full" />
