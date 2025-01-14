@@ -13,13 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Thinkdesign.build",
-  description:"We believe that great design comes from collaboration, innovation, and a deep understanding of our client's needs.",
-  icons: {
-    icon: '/favicon.svg',
-  },
-};
+
 
 export default function RootLayout({
   children,
@@ -29,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href={metadata.icons.icon} />
+        <title>Thinkdesign.build</title>
+        <meta name="description" content="We believe that great design comes from collaboration, innovation, and a deep understanding of our client's needs." />
+        <link rel="icon" href='/favicon.svg' />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       </head>
       <body
