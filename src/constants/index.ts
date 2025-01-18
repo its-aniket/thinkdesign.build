@@ -269,7 +269,7 @@ export const cardsData = [
       client: "IIT Dharwad",
       location: "Dharwad, Karnataka",
       area: "470.21 Acres",
-      builtarea: "1,293,000 sq. ft.",
+      builtarea: "1,293,000 sq. m.",
       services: ["Architecture"],
       team: ["Amit Chaubal", "Kaustubh Shevade"],
       gallery: ["/images/Project_8/iit_d1.jpg", "/images/Project_8/iit_d2.jpg","/images/Project_8/iit_d3.jpg","/images/Project_8/iit_d4.jpg","/images/Project_8/iit_d5.jpg","/images/Project_8/iit_d6.jpg","/images/Project_8/iit_d7.jpg"],
