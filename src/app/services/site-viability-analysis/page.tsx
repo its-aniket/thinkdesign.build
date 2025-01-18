@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown, Compass, FileSearch, Mountain, Database, BarChart, Shield } from "lucide-react";
+import { ChevronDown, Compass, FileSearch, Database, BarChart, Shield } from "lucide-react";
 import Contactus from "@/components/Contactus";
 
 const analysisPhases = [
