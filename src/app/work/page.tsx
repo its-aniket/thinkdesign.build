@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion";
-import { gsap } from "gsap";
 import Productgallery from '@/components/Productgallery';
 import Image from 'next/image';
 import Contactus from '@/components/Contactus';
