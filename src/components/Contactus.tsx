@@ -1,25 +1,39 @@
 "use client";
 import React from "react";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import { Formik } from "formik";
+import { Mail, Phone, Clock, Send } from "lucide-react";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+// Define Type for Form Values
+interface ContactFormValues {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 const ContactUs = () => {
+  // Define the validation schema
   const contactSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
     subject: Yup.string().required("Subject is required"),
-    message: Yup.string()
+    message: Yup.string().optional(), // No requirement for message
   });
 
-  const initialValuesContact = {
+  // Initial values for the form
+  const initialValuesContact: ContactFormValues = {
     name: "",
     email: "",
     subject: "",
     message: "",
   };
 
-  const handleContactSubmit = (values: any, { resetForm }: any) => {
+  // Handle form submission
+  const handleContactSubmit = (
+    values: ContactFormValues,
+    { resetForm }: { resetForm: () => void }
+  ) => {
     console.log("Form Values:", values);
     resetForm();
   };
