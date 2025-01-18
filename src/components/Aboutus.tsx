@@ -52,7 +52,7 @@ const AboutUs = () => {
         </div>
         <div className="bg-gradient-to-br from-neutral-100 to-emerald-50 rounded-2xl h-[400px] relative overflow-hidden shadow-2xl">
           <img
-            src="/images/img13.jpg"
+            src="/images/about_us.jpg"
             alt="Featured Architecture"
             className="object-cover w-full h-full "
           />
@@ -178,7 +178,7 @@ const AboutUs = () => {
           </div>
           <div className="shadow-2xl rounded-xl">
             <TeamMember
-              image="/images/principle_arch.png"
+              image="/images/interior_designer.jpg"
               name="Interior Design Lead"
               achievements={[
                 "Extensive commercial project experience",

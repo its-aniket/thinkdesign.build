@@ -90,7 +90,7 @@ const Banner = () => {
 
   return (
     <div className="relative mx-4" ref={sliderRef}>
-      <div className="rounded-3xl h-[60vh] shadow-2xl overflow-hidden relative lg:h-[80vh]">
+      <div className="rounded-3xl h-[60vh] shadow-2xl overflow-hidden relative lg:h-[80vh] md:mt-[5rem]">
         {/* Current Slide */}
         <div 
           ref={currentSlideRef}
