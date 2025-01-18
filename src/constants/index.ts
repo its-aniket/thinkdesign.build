@@ -14,7 +14,6 @@ export const navlinks =[
           { text: "3D Modeling & Drawing Services", href: "/services/3d-modeling-rawing-services" },
         ],
       },
-    {href:"/about_us" ,text:"about us"},
     
     //{href:"/contactus" ,text:"contact us"}
 ]
