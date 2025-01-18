@@ -27,7 +27,7 @@ export const navlinks = [
       },
       {
         text: "3D Modeling & Drawing Services",
-        href: "/services/3d-modeling-rawing-services",
+        href: "/services/3d-modeling-drawing-services",
       },
     ],
   },
