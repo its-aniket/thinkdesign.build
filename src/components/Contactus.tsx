@@ -39,7 +39,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-4">
+    <div className="mx-auto max-w-7xl px-4 py-4 ">
       <div className="flex flex-col items-center mb-12">
         <span className="text-neutral-400 uppercase tracking-widest text-sm">
           contact us
@@ -50,7 +50,7 @@ const ContactUs = () => {
 
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Contact Information */}
-        <div className="lg:w-1/3 bg-black rounded-[25px] p-8 text-white shadow-2xl transform transition-all duration-300 hover:translate-y-[-5px]">
+        <div className=" lg:w-1/3 bg-black rounded-[25px] p-8 text-white shadow-2xl transform transition-all duration-300 hover:translate-y-[-5px]">
           <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Contact Information
           </h2>

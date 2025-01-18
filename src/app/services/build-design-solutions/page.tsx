@@ -149,7 +149,7 @@ const Page = () => {
   return (
     <div className=" mx-4 min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="rounded-[25px] overflow-hidden mt-[5rem]">
+      <div className="rounded-[25px] overflow-hidden md:mt-[5rem]">
 
       <motion.div 
         initial={{ opacity: 0 }}
