@@ -107,7 +107,7 @@ const ProjectPage = () => {
             <div>
               <h3 className="text-lg font-medium mb-4">Services</h3>
               <ul className="space-y-2">
-                {project?.services.map((service, index) => (
+                {project?.services?.map((service, index) => (
                   <li key={index} className="text-gray-600">{service}</li>
                 ))}
               </ul>
@@ -116,7 +116,7 @@ const ProjectPage = () => {
             <div>
               <h3 className="text-lg font-medium mb-4">Project Team</h3>
               <ul className="space-y-2">
-                {project?.team.map((member, index) => (
+                {project?.team?.map((member, index) => (
                   <li key={index} className="text-gray-600">{member}</li>
                 ))}
               </ul>
@@ -143,9 +143,9 @@ const ProjectPage = () => {
         viewport={{ once: true }}
         className="container mx-auto px-4 py-16"
       >
-        <h2 className="text-2xl font-medium mb-8">Project Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {project?.gallery.map((image, index) => (
+        <h2 className="text-2xl font-medium mb-8">Project Gallery</h2>
+          {project?.gallery?.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}

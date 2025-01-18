@@ -180,7 +180,7 @@ const Page = () => {
               transition={{ delay: 0.3 }}
               className="text-xl text-gray-200 max-w-3xl mb-8"
               >
-              This presentation outlines a detailed roadmap for a successful architectural project, covering each stage of the development process from initial conception to project completion.
+              detailed roadmap for a successful architectural project, covering each stage of the development process from initial conception to project completion.
             </motion.p>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
