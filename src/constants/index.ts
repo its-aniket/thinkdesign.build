@@ -18,10 +18,6 @@ export const navlinks = [
         href: "/services/design-to-delivery-architecture",
       },
       {
-        text: "Interior Fit-Out Expertise",
-        href: "/services/interior-fit-outexpertise",
-      },
-      {
         text: "Complete Interior Solutions",
         href: "/services/complete-nterior-solutions",
       },
