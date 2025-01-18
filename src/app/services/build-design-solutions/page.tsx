@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown, Building2, MapPin, PencilRuler, HardHat, ClipboardCheck, Cpu, Leaf } from "lucide-react";
+import { ChevronDown, Building2,  PencilRuler, HardHat, ClipboardCheck, Cpu, Leaf } from "lucide-react";
 import Contactus from "@/components/Contactus";
 
 const phases = [
