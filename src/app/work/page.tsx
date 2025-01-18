@@ -6,8 +6,8 @@ import Image from 'next/image';
 import Contactus from '@/components/Contactus';
 const index = () => {
   return (
-    <div className=" mx-4 mt-[5rem]">
-      <div className="rounded-[25px] overflow-hidden md:mt-[5rem]">
+    <div className=" mx-4 md:mt-[5rem]">
+      <div className="rounded-[25px] overflow-hidden ">
 
 <motion.div 
   initial={{ opacity: 0 }}
