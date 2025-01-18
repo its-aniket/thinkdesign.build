@@ -11,8 +11,8 @@ import { navlinks } from "@/constants";
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
-  const submenuRefs = useRef<(HTMLElement | null)[]>([]);
+  const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
+  const submenuRefs = useRef<(HTMLDivElement | null)[]>([]);
  
 
   useEffect(() => {
@@ -24,9 +24,11 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleSubmenu = (index) => {
+  const toggleSubmenu = (index: number) => {
     const submenuContainer = submenuRefs.current[index];
     
+    
+    if (submenuContainer) { 
     if (activeSubmenu === index) {
       // Close submenu
       gsap.to(submenuContainer, {
@@ -48,6 +50,7 @@ const Navbar = () => {
       setActiveSubmenu(index);
     }
   };
+}
 
   return (
     <header className=" top-0 left-0 right-0 z-50 bg-transparent shadow-sm md:fixed md:bg-white">
@@ -169,7 +172,7 @@ const Navbar = () => {
                           />
                         </button>
                         <div
-                          ref={(el) => (submenuRefs.current[index] = el)} 
+                          ref={(el) => { submenuRefs.current[index] = el; }}
                           className="overflow-hidden"
                           style={{ height: 0 }}
                         >
